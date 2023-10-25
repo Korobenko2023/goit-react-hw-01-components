@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
 body {
   margin: 0;
@@ -12,4 +12,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.online {
+  background: yellowgreen;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.offline {
+  background: gray;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
