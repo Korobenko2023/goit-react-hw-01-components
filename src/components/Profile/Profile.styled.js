@@ -63,6 +63,7 @@ export const LabelStats = styled.span`
   font-weight: 500;
   font-size: 16px;
 `;
+
  export const QuantityStats = styled.span`
   font-weight: 700;
   font-size: 16px;

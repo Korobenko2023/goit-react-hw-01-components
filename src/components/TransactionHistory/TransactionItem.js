@@ -1,9 +1,10 @@
+import { TdTransactionItem, TrTransactionItem } from "./TransactionItem.styled"
 export const TransactionItem = ({transaction: {type, amount, currency}}) => {
     return (
-        <tr>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
-        </tr> 
+        <TrTransactionItem>
+            <TdTransactionItem>{type}</TdTransactionItem>
+            <TdTransactionItem>{amount}</TdTransactionItem>
+            <TdTransactionItem>{currency}</TdTransactionItem>
+        </TrTransactionItem> 
     )
 }

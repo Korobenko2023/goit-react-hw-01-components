@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding-left: ${p => p.theme.spasing(4)};
   padding-right: ${p => p.theme.spasing(4)};
-  color: ${p => p.theme.background.black};
+  color: ${p => p.theme.colors.black};
   letter-spacing: 0.02em;
 }
 
@@ -64,6 +64,5 @@ section {
     margin-bottom: ${p => p.theme.spasing(10)};
   }
 }
-
 `;
 

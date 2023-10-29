@@ -12,12 +12,12 @@ export const ItemFriendListItem = styled.li`
     margin-bottom: ${p => p.theme.spasing(5)}; 
   }
 `;
-
+    
 export const StatusFriendListItem = styled.span`
    width: 15px;
    height: 15px;
    border-radius: 50%;
-   background-color: ${(props) => (props.isOnline ? props.theme.isOnline.online : props.theme.isOnline.offline)};
+   background-color: ${p => p.$isOnline ? p.theme.background.green : p.theme.background.red};
    margin-left: 10px;
    margin-right: 20px;
 `;
