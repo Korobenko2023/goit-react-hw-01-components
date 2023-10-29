@@ -3,7 +3,7 @@ import { ContainerStatistics, TitleStatistics, ListStatistics } from "./Statisti
 export const Statistics = ({ title, stats }) => {
     return (
         <ContainerStatistics>
-        <TitleStatistics>{title}</TitleStatistics>
+        {title && <TitleStatistics>{title}</TitleStatistics>}
               <ListStatistics>
                 {stats.map(stat => (
                      <StatisticsItem key={stat.id} stat={stat} />
@@ -12,3 +12,4 @@ export const Statistics = ({ title, stats }) => {
         </ContainerStatistics>
     )
 }
+
